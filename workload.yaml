@@ -1,0 +1,10 @@
+description: gcube-pytorch-jupyter
+containerImage: ghcr.io/vfxceo-ai/gcube-pytorch-jupyter:latest
+repo: ghcr.io
+port: 8888
+gpuCode: 101
+cuda: 12080
+sharedMemory: 4
+containerEnvs:
+  - key: JUPYTER_TOKEN
+    value: ""
