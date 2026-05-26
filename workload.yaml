@@ -3,15 +3,14 @@ cuda: ""
 sharedMemory: 4
 
 containers:
-  - containerImage: vfxceo-ai/gcube-pytorch-jupyter:latest
+  - containerImage: ghcr.io/vfxceo-ai/gcube-pytorch-jupyter:latest
     repo: ghcr.io
     port: 8888
-    maxConnection: 4
+    maxConnection: 32
     containerCommand: ""
-    isCredential: true
-    containerEnvs:
-      - JUPYTER_TOKEN: ""
+    isCredential: false
+    containerEnvs: []
     userStorages: []
 
 gpuSpecs:
-  - gpuCode: 099
+  - gpuCode: 085
