@@ -1,9 +1,9 @@
 description: gcube-pytorch-jupyter
-cuda: 12080
+cuda: ""
 sharedMemory: 4
 
 containers:
-  - containerImage: ghcr.io/vfxceo-ai/gcube-pytorch-jupyter:latest
+  - containerImage: vfxceo-ai/gcube-pytorch-jupyter:latest
     repo: ghcr.io
     port: 8888
     maxConnection: 4
